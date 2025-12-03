@@ -119,14 +119,51 @@ nav a {
   border: 1px solid rgba(0, 150, 255, 0.25);
   backdrop-filter: blur(8px);
 
-  transition: 0.25s ease;
+  transition: 0.5s ease-in-out;
 }
 
 nav a:hover {
   background: rgba(0, 150, 255, 0.25);
   border-color: rgba(0, 200, 255, 0.5);
   transform: scale(1.1);
+  translate: 0.3 ease;
 }
+
+/* ANIMAÇÃO SUAVE DO TEXTO DO NAV (slide + scale) */
+.slide-in {
+    opacity: 0;
+    transform: translateY(10px) scale(0.9);
+    animation: slideIn 0.45s ease forwards;
+}
+
+.slide-out {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    animation: slideOut 0.35s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px) scale(0.85);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10px) scale(0.85);
+    }
+}
+
 
 /* ============================================================
    HERO
@@ -357,5 +394,6 @@ footer {
 
   .btns {
     margin-top: 10vh;
+    margin-left: 8px;
   }
 }

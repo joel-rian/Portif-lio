@@ -28,4 +28,4 @@ function trocarPalavra() {
 linkAnimado.classList.add('slide-in');
 
 // Configura o intervalo para chamar a função a cada 2000 milissegundos (2 segundos)
-setInterval(trocarPalavra, 2000);
+setInterval(trocarPalavra, 5000);
