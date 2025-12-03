@@ -3,7 +3,7 @@ const projetos = [
     {
         titulo: "Landing Page Burguer",
         desc: "Um site cardápio, rápido e totalmente responsivo.",
-        img: "./img/DevBurguer.png",
+        img: "./img/Burguer.png",
         link: "https://joel-rian.github.io/PAGE.HAMBURGUER/",
         categoria: "site"
     },
